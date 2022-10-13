@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Breast Cancer Detection</title>
@@ -11,8 +12,8 @@
     /*just bg and body style*/
     body {
       margin: 40px;
-      background-color: #808080;
-      background-image: linear-gradient(315deg, #de5499 19%, #a0c5ba 85%);
+      background-color: #140e0e;
+      background-image: linear-gradient(315deg, #f0a4ca 19%, #39112b 85%);
     }
 
     .container {
@@ -21,9 +22,9 @@
     }
 
     .btn-container {
-      background: white;
+      background: rgb(199, 198, 198);
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-      border-radius: 5px;
+      border-radius: 10px;
       padding: 10px;
     }
 
@@ -33,12 +34,14 @@
 
     .btn-primary {
       border-color: #ff33f !important;
-      color: #ffffff;
+      color: rgba(153, 134, 228);
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
       background-color: #de5499 !important;
       border-color: #de5499 !important;
-      padding: 5px;
+      padding: 8px;
     }
+
+
 
     label {
       width: 50%;
@@ -86,41 +89,42 @@
                   <h7>(Values Ranges from 1-10)</h7>
                   <div class="form-group">
                     <label for="clump_thickness">Clump Thickness </label>
-                    <input type="text" class="form-control" name="clump_thickness" required="required">
+                    <input type="number" class="form-control" name="clump_thickness" style="width: 13em" min="1" max="10" required="required">
                   </div>
                   <div class="form-group">
                     <label for="uniform_cell_size">Uniform Cell size</label>
-                    <input type="text" class="form-control" name="uniform_cell_size" required="required">
+                    <input type="number" class="form-control" name="uniform_cell_size" style="width: 13em" min="1" max="10" required="required">
                   </div>
                   <div class="form-group">
                     <label for="uniform_cell_shape">Uniform Cell shape</label>
-                    <input type="text" class="form-control" name="uniform_cell_shape" required="required" />
+                    <input type="number" class="form-control" name="uniform_cell_shape" style="width: 13em" min="1" max="10" required="required" />
                   </div>
                   <div class="form-group">
                     <label for="marginal_adhesion">Marginal Adhesion</label>
-                    <input type="text" class="form-control" name="marginal_adhesion" required="required" />
+                    <input type="number" class="form-control" name="marginal_adhesion" style="width: 13em" min="1" max="10" required="required" />
                   </div>
                   <div class="form-group">
                     <label for="single_epithelial_size">Single Epithelial Cell Size</label>
-                    <input type="text" class="form-control" name="single_epithelial_size" required="required" />
+                    <input type="number" class="form-control" name="single_epithelial_size" style="width: 13em" min="1" max="10" required="required" />
                   </div>
                   <div class="form-group">
                     <label for="bare_nuclei">Bare Nuclei</label>
-                    <input type="text" class="form-control" name="bare_nuclei" required="required" />
+                    <input type="number" class="form-control" name="bare_nuclei" style="width: 13em" min="1" max="10" required="required" />
                   </div>
                   <div class="form-group">
                     <label for="bland_chromatin">Bland Chromatin</label>
-                    <input type="text" class="form-control" name="bland_chromatin" required="required" />
+                    <input type="number" class="form-control" name="bland_chromatin" style="width: 13em" min="1" max="10" required="required" />
                   </div>
                   <div class="form-group">
                     <label for="normal_nucleoli">Normal Nucleoli</label>
-                    <input type="text" class="form-control" name="normal_nucleoli" required="required" />
+                    <input type="number" class="form-control" name="normal_nucleoli" style="width: 13em" min="1" max="10" required="required" />
                   </div>
 
                   <div class="form-group">
                     <label for="mitoses">Mitoses</label>
-                    <input type="text" class="form-control" name="mitoses" required="required" />
+                    <input type="number" class="form-control" name="mitoses" style="width: 13em" min="1" max="10" required="required" />
                   </div>
+                  <br>
                   <button type="submit" class="btn btn-primary btn-lg">Predict Cancer</button>
                 </div>
               </div>
